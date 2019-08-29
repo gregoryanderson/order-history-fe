@@ -30,9 +30,9 @@ class App extends Component {
   render () {
     return (
     <main className="app">
-      <nav>
+      <nav className="app__nav">
         <Form addOrder={this.addOrder}/>
-        <h2>My Order History</h2>
+        <h2 className="app__nav--h2">My Order History</h2>
       </nav>
       <section>
         <Container deleteOrder={this.deleteOrder} orders={this.state.orders}/>

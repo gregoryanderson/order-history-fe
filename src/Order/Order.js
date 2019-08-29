@@ -4,15 +4,15 @@ import './Order.css';
 const Order = ({photo, name, price, description, id, deleteOrder }) => {
 
     return (
-        <article>
-            <div>
+        <article className="order">
+            <div className="photo">
                 {photo}
             </div>
-            <div>
+            <div className="text">
                 {name}
                 {description}
             </div>
-            <div>
+            <div className="price">
                 {price}
                 <button onClick={() => deleteOrder(id)}>Remove From History!</button>
             </div>

@@ -1,3 +1,19 @@
 .app {
   text-align: center
 }
+
+.app__nav {
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/dJmuAVO/videoblocks-top-view-male-hands-writing-in-notebook-on-white-desk-from-above_h4w8r3yaal_thumbnail-full01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  height: 300px;
+}
+
+.app__nav--h2 {
+  width: 50%;
+  align-items: center;
+  margin-top: 100px;
+}

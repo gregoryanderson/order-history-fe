@@ -38,15 +38,17 @@ class Form extends Component {
 
     render() {
       return (
-        <form>
+        <form className="form">
             <input 
+                className="form__input"
                 type='photo'
                 placeholder='Image Url'
                 name='photo'
                 value={this.state.image}
                 onChange={event => this.handleChange(event)}
             />
-            <input 
+            <input
+                className="form__input"
                 type='name'
                 placeholder='Name'
                 name='name'
@@ -54,6 +56,7 @@ class Form extends Component {
                 onChange={event => this.handleChange(event)}
             />
             <input 
+                className="form__input"
                 type='description'
                 placeholder='Description'
                 name='description'
@@ -61,6 +64,7 @@ class Form extends Component {
                 onChange={event => this.handleChange(event)}
             />
             <input
+                className="form__input"
                 type='price'
                 placeholder='Price'
                 name='price'
