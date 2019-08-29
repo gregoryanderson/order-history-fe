@@ -1,12 +1,12 @@
 import React from 'react';
 import './Order.css';
 
-const Order = ({photo, name, price, description, id, deleteOrder }) => {
+const Order = ({img, name, price, description, id, deleteOrder }) => {
 
     return (
         <article className="order">
             <div className="photo">
-                {photo}
+                <img src={img} height="50px" width="50px"/>
             </div>
             <div className="text">
                 {name}

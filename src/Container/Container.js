@@ -6,7 +6,7 @@ const Container = ({orders, deleteOrder}) => {
     const orderCards = orders.map(order => {
         return (
         <Order 
-            photo={order.photo}
+            img={order.img}
             name={order.name}
             description={order.description}
             price={order.price}
