@@ -1,34 +1,3 @@
-.App {
-  text-align: center;
-}
-
-header {
-  align-items: center;
-  background: url('../images/checkout.jpg') no-repeat center / 100%;
-  color: #FFF;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  height: 300px;
-}
-
-h1 {
-  font-size: 72px;
-}
-
-.purchase-form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  width: 50%;
-}
-
-.purchase-container {
-  height: 700px;
-  background:#CECECE;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.app {
+  text-align: center
 }
