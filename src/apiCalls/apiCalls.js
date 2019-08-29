@@ -1,6 +1,13 @@
-export const addOrder= () => {
-    console.log('in addOrder')
-    // return fetch()
+export const addOrder= (newPurchase, options) => {
+    fetch('http://localhost:3001/api/v1/purchases', options)
+      .then(response => {
+          console.log(response)
+          if(!response.ok){
+              throw Error('Error fetching orders')
+          }
+          return response.json();
+      })
+
 }
 
 export const getOrders = () => {

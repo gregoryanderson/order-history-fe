@@ -18,13 +18,13 @@ class Form extends Component {
             id: Date.now(),
             ...this.state
         }
-        this.props.addOrder(newPurchase);
+        this.props.addPurchase(newPurchase);
         this.clearInputs()
     }
 
     clearInputs = () => {
         this.setState({
-            image: '',
+            img: '',
             name: '',
             description: '',
             price: ''
@@ -41,15 +41,15 @@ class Form extends Component {
         <form className="form">
             <input 
                 className="form__input"
-                type='photo'
+                type='text'
                 placeholder='Image Url'
-                name='photo'
+                name='img'
                 value={this.state.image}
                 onChange={event => this.handleChange(event)}
             />
             <input
                 className="form__input"
-                type='name'
+                type='text'
                 placeholder='Name'
                 name='name'
                 value={this.state.name}
@@ -57,7 +57,7 @@ class Form extends Component {
             />
             <input 
                 className="form__input"
-                type='description'
+                type='text'
                 placeholder='Description'
                 name='description'
                 value={this.state.description}
@@ -65,7 +65,7 @@ class Form extends Component {
             />
             <input
                 className="form__input"
-                type='price'
+                type='text'
                 placeholder='Price'
                 name='price'
                 value={this.state.price}
